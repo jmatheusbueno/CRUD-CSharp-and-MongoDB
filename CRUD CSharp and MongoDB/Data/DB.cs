@@ -25,8 +25,21 @@ namespace CRUD_CSharp_and_MongoDB.Data
             catch
             {
                 return false;
-            }     
-            
+            }              
+        }
+
+        public List<Contact> GetContacts()
+         {
+            var collectionContacts = Database.GetCollection<Contact>("contacts");
+            var lstContacts = new List<Contact>();
+
+            lstContacts = collectionContacts.Find(c => true).ToList();
+            return lstContacts;
+        }
+
+        public IMongoCollection<Contact> GetCollection()
+        {
+            return Database.GetCollection<Contact>("contacts");
         }
     }
 }

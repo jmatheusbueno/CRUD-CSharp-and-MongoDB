@@ -135,7 +135,7 @@ namespace CRUD_CSharp_and_MongoDB
             this.dgvContacts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvContacts.Location = new System.Drawing.Point(609, 24);
             this.dgvContacts.Name = "dgvContacts";
-            this.dgvContacts.Size = new System.Drawing.Size(643, 645);
+            this.dgvContacts.Size = new System.Drawing.Size(650, 645);
             this.dgvContacts.TabIndex = 7;
             // 
             // FormMain
@@ -152,6 +152,7 @@ namespace CRUD_CSharp_and_MongoDB
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lista de contatos";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.gprContact.ResumeLayout(false);
             this.gprContact.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContacts)).EndInit();
