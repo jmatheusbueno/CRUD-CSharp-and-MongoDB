@@ -1,0 +1,29 @@
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\obj\Debug\CRUD CSharp and MongoDB.csprojAssemblyReference.cache
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\obj\Debug\CRUD_CSharp_and_MongoDB.Properties.Resources.resources
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\obj\Debug\CRUD CSharp and MongoDB.csproj.GenerateResource.cache
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\obj\Debug\CRUD CSharp and MongoDB.csproj.CoreCompileInputs.cache
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\bin\Debug\snappy32.dll
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\bin\Debug\snappy64.dll
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\bin\Debug\libzstd.dll
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\bin\Debug\mongocrypt.dll
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\bin\Debug\CRUD CSharp and MongoDB.exe.config
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\bin\Debug\CRUD CSharp and MongoDB.exe
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\bin\Debug\CRUD CSharp and MongoDB.pdb
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\bin\Debug\DnsClient.dll
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\bin\Debug\MongoDB.Bson.dll
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\bin\Debug\MongoDB.Driver.dll
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\bin\Debug\MongoDB.Libmongocrypt.dll
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\bin\Debug\SharpCompress.dll
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\bin\Debug\System.Buffers.dll
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\bin\Debug\DnsClient.xml
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\bin\Debug\MongoDB.Bson.xml
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\bin\Debug\MongoDB.Driver.xml
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\bin\Debug\System.Buffers.xml
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\obj\Debug\CRUD CSharp and MongoDB.csproj.CopyComplete
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\obj\Debug\CRUD CSharp and MongoDB.exe
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\obj\Debug\CRUD CSharp and MongoDB.pdb
+C:\Users\jmath\source\repos\CRUD CSharp and MongoDB\CRUD CSharp and MongoDB\obj\Debug\CRUD_CSharp_and_MongoDB.FormMain.resources
