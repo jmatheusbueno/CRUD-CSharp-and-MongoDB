@@ -39,6 +39,8 @@ namespace CRUD_CSharp_and_MongoDB
             this.btnSave = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.dgvContacts = new System.Windows.Forms.DataGridView();
+            this.btnSelect = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.gprContact.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContacts)).BeginInit();
             this.SuspendLayout();
@@ -135,8 +137,30 @@ namespace CRUD_CSharp_and_MongoDB
             this.dgvContacts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvContacts.Location = new System.Drawing.Point(609, 24);
             this.dgvContacts.Name = "dgvContacts";
-            this.dgvContacts.Size = new System.Drawing.Size(650, 645);
+            this.dgvContacts.Size = new System.Drawing.Size(650, 600);
             this.dgvContacts.TabIndex = 7;
+            // 
+            // btnSelect
+            // 
+            this.btnSelect.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelect.Location = new System.Drawing.Point(1156, 630);
+            this.btnSelect.Name = "btnSelect";
+            this.btnSelect.Size = new System.Drawing.Size(103, 39);
+            this.btnSelect.TabIndex = 8;
+            this.btnSelect.Text = "Selecionar";
+            this.btnSelect.UseVisualStyleBackColor = true;
+            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(1047, 630);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(103, 39);
+            this.btnDelete.TabIndex = 10;
+            this.btnDelete.Text = "Deletar";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // FormMain
             // 
@@ -144,6 +168,8 @@ namespace CRUD_CSharp_and_MongoDB
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.dgvContacts);
             this.Controls.Add(this.gprContact);
             this.MaximizeBox = false;
@@ -172,6 +198,8 @@ namespace CRUD_CSharp_and_MongoDB
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.DataGridView dgvContacts;
+        private System.Windows.Forms.Button btnSelect;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
 

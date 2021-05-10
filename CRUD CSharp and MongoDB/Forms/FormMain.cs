@@ -22,7 +22,15 @@ namespace CRUD_CSharp_and_MongoDB
         #region events
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Save();
+            if (btnSave.Text == "Cadastrar")
+                Save();
+            else
+            {
+                var selected = dgvContacts.SelectedRows;
+                var contact = (Contact)selected[0].DataBoundItem;
+                UpdateContact(contact);
+            }
+
             AddColumns();
         }
 
@@ -33,6 +41,14 @@ namespace CRUD_CSharp_and_MongoDB
         private void FormMain_Load(object sender, EventArgs e)
         {
             AddColumns();
+        }
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            Delete();
+        }
+        private void btnSelect_Click(object sender, EventArgs e)
+        {
+            EditContact();
         }
         #endregion
 
@@ -45,10 +61,10 @@ namespace CRUD_CSharp_and_MongoDB
             contact.Number = txtNumber.Text;
 
             var db = new DB();
-            if (db.Save(contact))           
+            if (db.Save(contact))
                 MessageBox.Show("Novo Contato cadastrato com sucesso!", "Contato Cadastrado");
             else
-                MessageBox.Show("Não foi possível concluir o cadastro", "Contato Não Cadastrado");
+                MessageBox.Show("Não foi possível concluir o cadastro.", "Contato Não Cadastrado");
         }
 
         private void Clear()
@@ -75,7 +91,72 @@ namespace CRUD_CSharp_and_MongoDB
 
             dgvContacts.Columns[0].Visible = false;
         }
-        #endregion
 
+        private void Delete()
+        {
+            var selected = dgvContacts.SelectedRows;
+            if (selected.Count == 0)
+                MessageBox.Show("Não foi possível deletar o contato, certifique-se de ter selecionado toda a linha antes de deletar", "Contato Não Deletado");
+
+            else if (selected.Count == 1)
+            {
+                if (new DB().Delete(selected[0].Cells[0].Value.ToString()))
+                {
+                    MessageBox.Show("Contato deletado com sucesso!", "Contato Deletado");
+                    AddColumns();
+                }
+                else
+                    MessageBox.Show("Não foi possível deletar o contato, certifique-se de ter selecionado toda a linha antes de deletar.", "Contato Não Deletado");
+            }
+
+            else
+                MessageBox.Show("Não foi possível deletar o contato, certifique-se de ter selecionado apenas um contato antes de deletar.", "Contato Não Deletado");
+        }
+
+        private void UpdateContact(Contact contact)
+        {
+            contact.Name = txtName.Text;
+            contact.Mail = txtMail.Text;
+            contact.Number = txtNumber.Text;
+
+            if (new DB().Update(contact.Id, contact))
+            {
+                MessageBox.Show("Contato editado com sucesso!", "Contato Editado");
+                AddColumns();
+            }
+            else
+                MessageBox.Show("Não foi possível editar o contato.", "Contato Não Editado");
+
+            gprContact.Text = "Cadastrar Contato";
+            txtName.Text = string.Empty;
+            txtMail.Text = string.Empty;
+            txtNumber.Text = string.Empty;
+            btnSave.Text = "Cadastrar";
+        }
+
+        private void EditContact()
+        {
+            var selected = dgvContacts.SelectedRows;
+            if (selected.Count == 0)
+            {
+                MessageBox.Show("Não foi possível selecionar o contato, certifique-se de ter selecionado toda a linha antes.", "Contato Não Selecionado");
+                return;
+            }
+            else if (selected.Count == 1)
+            {
+                var contact = (Contact)selected[0].DataBoundItem;
+                gprContact.Text = "Editar Contato";
+                txtName.Text = contact.Name;
+                txtMail.Text = contact.Mail;
+                txtNumber.Text = contact.Number;
+                btnSave.Text = "Editar";
+            }
+            else
+            {
+                MessageBox.Show("Não foi possível selecionar o contato, certifique-se de ter selecionado apenas um contato.", "Contato Não Selecionado");
+                return;
+            }
+        }
+        #endregion
     }
 }
